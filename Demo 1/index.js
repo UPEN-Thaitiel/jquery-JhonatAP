@@ -1,29 +1,50 @@
-
 // Create a Javascript code to change the font color to red
+//document.querySelector("h1").style.color("red");
 
 // Create a jQuery code to change the fonr color to red
+$("h1").css("color", "red");
 
 // Add .big-titile class using Javascript.
+//document.querySelector("h1").classList.add("big-title");
 
 // Add .big-titile class using jQuery.
+$("h1").addClass("big-title")
 
 //  Change h1 text to "Bye" on Javascript
+//document.querySelector("h1").innerText = "Bye";
 
 //  Change h1 text to "Bye" on jQuery
-
+$("h1").text("Bye");
 //  Change buttom names 
 
 //  Change h1 text to "Bye" on jQuery
 
 //  Change attribute href link to ibm.com
 
+$("a").attr("href", "https://www.ibm.com/mx-es");
+
 // add a click event listener in the h1 header to change its color to green using jQuery
+$("h1").click(function() {
+    $("h1").css("color", "green");
+});
 
 // add a click event listener for each of the buttons to change H1 color to red in JavaScript
 
 // add a click event listener for each of the buttons to change H1 color to red in jQuery
 
+$("button").click(function () {
+    $("button").css("color", "red");
+})
+
 // add a mouseover using "on(mouseover,function())" to change   h1 element to purple using jQuery
+
+// $("h1").mouseover (function() {
+//     $("h1").css("color", "purple");
+// });
+
+$("h1").on("mouseover", function() {
+    $("h1").css("color", "purple");
+});
 
 // Create a toggle animation using jQuery for the header clicking buttons.
 
